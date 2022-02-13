@@ -1,0 +1,71 @@
+/*  Abstracts */
+/* Components */
+.dsc-title-primary {
+  font-size: 1.75rem;
+  color: #0511ac;
+}
+
+.dsc-title-secondary {
+  font-size: 1.75rem;
+  color: #0ccc46;
+}
+
+.dsc-title-dark {
+  color: rgba(136, 136, 136, 0.8);
+  font-size: 1.75rem;
+  font-weight: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.dsc-card {
+  width: 250px;
+  padding: 0;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0ccc46;
+}
+.dsc-card img {
+  width: 100%;
+  height: 150px;
+  display: block;
+}
+.dsc-card__body {
+  height: 50px;
+  text-align: center;
+  background: #0511ac;
+  line-height: 50px;
+}
+.dsc-card h1 {
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+}
+
+.dsc-btn-danger, .dsc-btn-success, .dsc-btn-primary {
+  height: 40px;
+  min-width: 100px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px 0;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dsc-btn-primary {
+  background: #0511ac;
+}
+
+.dsc-btn-success {
+  background: #0ccc46;
+}
+
+.dsc-btn-danger {
+  background: #f87c42;
+}
+
+/*# sourceMappingURL=styles.css.map */
