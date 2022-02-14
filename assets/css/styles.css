@@ -45,7 +45,7 @@
   margin: 0;
 }
 
-.dsc-btn-danger, .dsc-btn-success, .dsc-btn-primary {
+.dsc-btn-primary, .dsc-btn-success, .dsc-btn-danger {
   height: 40px;
   min-width: 100px;
   border: none;
@@ -55,17 +55,54 @@
   margin: 5px 0;
   box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
 }
+.dsc-btn-primary:hover, .dsc-btn-success:hover, .dsc-btn-danger:hover {
+  cursor: pointer;
+}
 
 .dsc-btn-primary {
   background: #0511ac;
 }
-
 .dsc-btn-success {
   background: #0ccc46;
 }
-
 .dsc-btn-danger {
   background: #f87c42;
+}
+
+.btn-outline {
+  height: 40px;
+  min-width: 100px;
+  background: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px 0;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+.btn-outline-primary {
+  border: 1px solid #0511ac;
+  color: #0511ac;
+}
+.btn-outline-primary:hover {
+  background: #0511ac;
+  color: #fff;
+}
+.btn-outline-success {
+  border: 1px solid #0ccc46;
+  color: #0ccc46;
+}
+.btn-outline-success:hover {
+  background: #0ccc46;
+  color: #fff;
+}
+.btn-outline-danger {
+  border: 1px solid #f87c42;
+  color: #f87c42;
+}
+.btn-outline-danger:hover {
+  background: #f87c42;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
