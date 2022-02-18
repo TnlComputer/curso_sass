@@ -1,5 +1,6 @@
 /*  Abstracts */
 /* Components */
+@import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@300;400;500;600;700;800;900 & mostrar=cambiar");
 .dsc-title-primary {
   font-size: 1.75rem;
   color: #1a0b6b;
@@ -558,6 +559,120 @@ tbody tr:nth-child(10) {
   .col-xxl-12 {
     width: 100%;
   }
+}
+* {
+  font-family: "monserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+ul li {
+  width: 100%;
+}
+ul li a {
+  display: block;
+}
+ul li a i {
+  margin-right: 16px;
+}
+
+main {
+  width: calc(100% - 300px);
+  margin-left: 300px;
+}
+
+nav.menu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1e274e;
+}
+nav.menu .menu-link {
+  width: 90%;
+  margin-left: 10%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+ul > li a {
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0;
+  font-weight: 500;
+  transition: 0.25s all ease-in-out;
+}
+ul > li a:hover {
+  box-shadow: 0 0 8px -4px white;
+  border-radius: 10px 0 0 10px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+ul > li ul > li a {
+  padding-left: 10px;
+  background: #131a36;
+  font-size: 15px;
+  padding: 15px 0 15px 10px;
+}
+ul > li ul > li a:hover {
+  box-shadow: 0 0 8px 0 #131a36;
+  border-radius: 0 50px 50px 0;
+  color: #131a36;
+  background: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-left: 10px solid #131a36;
+}
+
+ul > li ul > li ul > li a {
+  font-size: 12px;
+}
+
+ul > li {
+  margin-left: 0px;
+  position: relative;
+}
+ul > li > ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+ul > li:hover > ul {
+  display: block;
+}
+ul > li ul > li {
+  margin-left: 50px;
+  position: relative;
+}
+ul > li ul > li > ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+ul > li ul > li:hover > ul {
+  display: block;
+}
+ul > li ul > li ul > li {
+  margin-left: 100px;
+  position: relative;
+}
+ul > li ul > li ul > li > ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+ul > li ul > li ul > li:hover > ul {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
