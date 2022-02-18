@@ -1,0 +1,38 @@
+@function color($name) {
+  @return map-get($map: $palette, $key: $name );
+}
+
+@function reduceColor($name, $amount){
+  @return lighten(color($name), $amount);
+}
+
+@function changeColor($name, $type: darken, $amount: 1, $colorMix: #fff) {
+  $color: color($name);
+  @if $type == darken{
+    $color: darken($color, $amount);
+  }
+  @else if $type==lighten {
+    $color: lighten($color, $amount);
+  }
+  @else if $type==mixcolor {
+    $findColor: color($colorMix);
+    @if ($findColor) {
+      $colorMix: $findColor;
+    }
+    $color: mix($color, $colorMix);
+  } @else {
+    $color: rgba($color, $amount);  
+  }
+  // @if not $type == darken {
+
+  // }
+  @return $color;
+}
+
+@function scale($val, $max, $ratio: 1.5){
+  @while $val > $max  {
+     $val: $max / $ratio;
+}
+@return$val;
+}
+

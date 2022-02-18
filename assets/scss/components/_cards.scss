@@ -6,7 +6,7 @@
       radius: 5px;
       width: 1px;
       style: solid;
-      color: $secondary;
+      color: map-get($map: $palette, $key: 'secondary');
     }
 
     img {
@@ -18,7 +18,7 @@
     &__body {
       height: 50px;
       text-align: center;
-      background: $primary;
+      background: map-get($map: $palette, $key: 'primary');
       line-height: 50px;
     }
 
@@ -27,4 +27,10 @@
       line-height: 50px;
       margin: 0;
     }
+  }
+
+  .main-card {
+    height: 250px;
+    width: scale(250px, 230px, 1.1);
+    background: rgba(0,0,0,.25);
   }

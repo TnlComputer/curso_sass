@@ -1,7 +1,32 @@
-$primary: rgb(5, 17, 172);
-$secondary: rgb(12, 204, 70);
-$danger: rgb(248, 124, 66);
-$dark: #888;
-$dark_opacity: rgb($dark, 0.8);
+// $primary: rgb(26, 11, 107);
+// $secondary: rgb(12, 204, 70);
+// $success: rgb(40, 192, 40);
+// $danger: rgb(231, 47, 56);
+// $dark: #888;
+// $blue: blue;
+// $orange: orange;
+// $dark_opacity: rgb($dark, 0.8);
+$dark_opacity: reduceColor('dark', .8);
+
 $font-size: 1.75rem;
 $brand: "dsc";
+
+$palette :(
+ 'primary' : rgb(26, 11, 107),
+ 'secondary' : rgb(12, 204, 70),
+ 'success' : rgb(40, 192, 40),
+ 'danger' : rgb(231, 47, 56),
+ 'dark' : #000,
+ 'blue' :  blue,
+ 'orange' : orange,
+ 'light' : #fff,
+);
+
+// $titles: (
+//   'xs': 16px,
+//   'md': 20px,
+//   'lg': 24px,
+//   'xl': 32px
+//   );
+
+  $titles: ('xs' 16px 400, 'md'  20px 500, 'lg' 24px 600, 'xl'  32px 700);
